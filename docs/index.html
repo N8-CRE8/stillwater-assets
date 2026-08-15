@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stillwater Verses</title>
+<style>
+  :root {
+    --ink: #1c1a17;
+    --muted: #5b554c;
+    --line: #e0d9cd;
+    --bg: #faf7f2;
+    --accent: #3c5a54;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #f2ede4;
+      --muted: #b3aa9c;
+      --line: #33302b;
+      --bg: #14130f;
+      --accent: #8fb5ab;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 1.25rem 5rem;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.65;
+  }
+  main { max-width: 40rem; margin: 0 auto; }
+  header { padding: 4rem 0 2.5rem; border-bottom: 1px solid var(--line); margin-bottom: 2.5rem; }
+  h1 { font-size: 2.1rem; font-weight: normal; letter-spacing: 0.01em; margin: 0 0 0.5rem; }
+  h2 { font-size: 1.25rem; font-weight: normal; margin: 2.5rem 0 0.75rem; color: var(--accent); }
+  p { margin: 0 0 1rem; }
+  .tagline { color: var(--muted); margin: 0; font-style: italic; }
+  ul { padding-left: 1.2rem; margin: 0 0 1rem; }
+  li { margin-bottom: 0.4rem; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    font-size: 0.95rem;
+    color: var(--muted);
+  }
+  footer a { font-weight: bold; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Stillwater Verses</h1>
+    <p class="tagline">Short daily scripture videos, made for people who feel lost.</p>
+  </header>
+
+  <p>Stillwater Verses is a one-person publishing project. Every video is original work:
+  the script is written from scratch, the scripture is quoted from the World English Bible
+  (public domain), the narration is synthesized, and the background footage is licensed
+  stock. Nothing is reposted from another creator.</p>
+
+  <p>The videos go out daily to
+  <a href="https://www.instagram.com/stillwater.verses/">Instagram</a> and to the
+  Stillwater Verses channel on YouTube.</p>
+
+  <h2>About this publishing tool</h2>
+
+  <p>The videos are uploaded by a small command line tool that runs on the owner's own
+  computer. It uses the YouTube API Services to upload finished video files to the single
+  YouTube channel owned by the operator of this project.</p>
+
+  <ul>
+    <li>The tool is private. It is not offered to other people, has no accounts, no sign-up,
+    and no user interface beyond the owner's own terminal.</li>
+    <li>It uploads only. It does not read, download, cache, or display anyone else's YouTube
+    content, and it does not collect data about viewers.</li>
+    <li>It acts on one channel only, the operator's own, authorized once through Google's
+    standard OAuth consent screen.</li>
+  </ul>
+
+  <p>YouTube is a trademark of Google LLC. This project is not affiliated with or endorsed
+  by YouTube or Google. Use of the YouTube API Services is subject to the
+  <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
+
+  <footer>
+    <p><a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - Stillwater Verses</title>
+<style>
+  :root {
+    --ink: #1c1a17;
+    --muted: #5b554c;
+    --line: #e0d9cd;
+    --bg: #faf7f2;
+    --accent: #3c5a54;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #f2ede4;
+      --muted: #b3aa9c;
+      --line: #33302b;
+      --bg: #14130f;
+      --accent: #8fb5ab;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 1.25rem 5rem;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.65;
+  }
+  main { max-width: 40rem; margin: 0 auto; }
+  header { padding: 3rem 0 2rem; border-bottom: 1px solid var(--line); margin-bottom: 2rem; }
+  h1 { font-size: 1.9rem; font-weight: normal; margin: 0 0 0.35rem; }
+  h2 { font-size: 1.2rem; font-weight: normal; margin: 2.25rem 0 0.6rem; color: var(--accent); }
+  p { margin: 0 0 1rem; }
+  .updated { color: var(--muted); margin: 0; font-size: 0.95rem; }
+  ul { padding-left: 1.2rem; margin: 0 0 1rem; }
+  li { margin-bottom: 0.4rem; }
+  a { color: var(--accent); }
+  .back { display: inline-block; margin-bottom: 1.5rem; font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <a class="back" href="index.html">Stillwater Verses</a>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated 15 August 2026</p>
+  </header>
+
+  <p>Stillwater Verses is a one-person publishing project. This policy explains what the
+  project's video publishing tool accesses, what it stores, and how to withdraw its access.
+  It is short because the tool does very little.</p>
+
+  <h2>Who this covers</h2>
+
+  <p>The publishing tool has exactly one user, the owner of this project, acting on the
+  single YouTube channel and single Instagram account that they own. The tool is not offered
+  to anyone else. There are no accounts to create, and no other person can sign in to it.</p>
+
+  <h2>What the tool accesses</h2>
+
+  <p>The tool uses the YouTube API Services, specifically the <code>videos.insert</code>
+  endpoint, to upload finished video files to the owner's own YouTube channel. Access is
+  granted once by the owner through Google's standard OAuth consent screen, using the
+  <code>youtube.upload</code> scope.</p>
+
+  <p>That scope allows uploading only. The tool does not read the channel's videos,
+  comments, subscribers, analytics, or private data, and it does not access any other
+  person's YouTube account or content.</p>
+
+  <h2>What is stored, and for how long</h2>
+
+  <ul>
+    <li><strong>An OAuth refresh token</strong>, held in a local configuration file on the
+    owner's own computer, so the tool can upload without signing in again. It is never
+    transmitted anywhere except to Google, and it is deleted when access is revoked.</li>
+    <li><strong>The video ID returned after each upload</strong>, kept in the project's own
+    notes so the owner can find the video again.</li>
+    <li><strong>Nothing else.</strong> No YouTube user data, no viewer data, no analytics,
+    no personal information about anyone, is collected, stored, or derived.</li>
+  </ul>
+
+  <p>No data obtained through the YouTube API Services is shared with, sold to, or
+  transmitted to any third party.</p>
+
+  <h2>Viewers of this website</h2>
+
+  <p>This site is a set of static pages. It sets no cookies, runs no analytics, embeds no
+  advertising, and loads no third-party scripts, fonts, or trackers. Nothing about visitors
+  is collected. The web host records standard server logs outside this project's control.</p>
+
+  <h2>Withdrawing access, and deleting data</h2>
+
+  <p>The owner may revoke this tool's access to their Google account at any time from
+  <a href="https://myaccount.google.com/permissions">Google's security settings</a>, at
+  which point the stored refresh token stops working and is deleted. Any request relating to
+  data held by this project can be sent to the contact address below and will be handled
+  within seven days.</p>
+
+  <h2>Google and YouTube terms</h2>
+
+  <p>The tool uses the YouTube API Services. By extension, this project operates under the
+  <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and Google's
+  handling of information is described in the
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <p>YouTube is a trademark of Google LLC. This project is not affiliated with or endorsed
+  by YouTube or Google.</p>
+
+  <h2>Changes</h2>
+
+  <p>If this policy changes, the revised version is posted on this page with a new date at
+  the top.</p>
+
+  <h2>Contact</h2>
+
+  <p>Questions about this policy, or about data held by this project:
+  <a href="mailto:CONTACT_EMAIL_HERE">CONTACT_EMAIL_HERE</a></p>
+</main>
+</body>
+</html>
